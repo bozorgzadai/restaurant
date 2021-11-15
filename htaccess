@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /restaurant-v2/
+
+RewriteCond %{REQUEST_URI} !\.(jpg|gif|jpeg|png|css|js|eot|svg|ttf|woff)$
+RewriteRule .* index.php [L]
+
